@@ -1,0 +1,18 @@
+#zf210105.1751
+# source: https://www.home-assistant.io/getting-started/
+
+version: '3'
+services:
+  homeassistant:
+    container_name: home-assistant
+    image: homeassistant/home-assistant:stable
+    volumes:
+      - $PWD/config:/config
+    environment:
+      - TZ=Europe/Zurich
+    restart: always
+#    network_mode: host
+    ports: 
+      - "8123:8123"
+    
+    
