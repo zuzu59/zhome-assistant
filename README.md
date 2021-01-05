@@ -1,7 +1,7 @@
 # zhome-assistant
 Petits tests de Homme Assistant dans un container Docker avec tout ce qu'il va bien pour pouvoir tester facilement
 
-zf210105.1851
+zf210105.2133
 
 
 <!-- TOC titleSize:2 tabSpaces:2 depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 skip:1 title:1 charForUnorderedList:* -->
@@ -13,6 +13,7 @@ zf210105.1851
   * [Utilisation](#utilisation)
     * [Démarrage](#démarrage)
     * [Arrêt](#arrêt)
+  * [Sauvegarde de la config d'Home Assistant](#sauvegarde-de-la-config-dhome-assistant)
 * [Divers sources à tester](#divers-sources-à-tester)
   * [Pour les SonOff dans e-welink](#pour-les-sonoff-dans-e-welink)
 * [Utilitaire d'installation HAC](#utilitaire-dinstallation-hac)
@@ -55,11 +56,18 @@ Simplement faire:
 ./stop.sh
 ```
 
+## Sauvegarde de la config d'Home Assistant
+Pour sauvegarder la config d'Home Assisttant, il faut simplement faire:
+```
+./sav_config.sh
+```
 
 
 # Divers sources à tester
 ## Pour les SonOff dans e-welink
 https://github.com/AlexxIT/SonoffLAN
+
+https://hometechtime.com/how-to-install-sonoff-lan-on-home-assistant/
 
 https://github.com/peterbuga/HASS-sonoff-ewelink
 
