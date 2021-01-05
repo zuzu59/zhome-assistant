@@ -1,8 +1,12 @@
 #!/bin/bash
 #Petit script pour démarrer tout le binz
-#zf210105.1740
+#zf210105.1858
 #pour installer Docker et Docker compose sur une machine Ubuntu c'est ici:
 #https://github.com/zuzu59/docker_demo
+
+mkdir ./config
+sudo chown -R $USER.$USER ./config
+sudo chmod -R 777 ./config
 
 #docker-compose up
 docker-compose up -d

@@ -1,7 +1,7 @@
 # zhome-assistant
 Petits tests de Homme Assistant dans un container Docker avec tout ce qu'il va bien pour pouvoir tester facilement
 
-zf210105.1814
+zf210105.1851
 
 
 <!-- TOC titleSize:2 tabSpaces:2 depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 skip:1 title:1 charForUnorderedList:* -->
@@ -13,6 +13,9 @@ zf210105.1814
   * [Utilisation](#utilisation)
     * [Démarrage](#démarrage)
     * [Arrêt](#arrêt)
+* [Divers sources à tester](#divers-sources-à-tester)
+  * [Pour les SonOff dans e-welink](#pour-les-sonoff-dans-e-welink)
+* [Utilitaire d'installation HAC](#utilitaire-dinstallation-hac)
 <!-- /TOC -->
 
 
@@ -53,6 +56,17 @@ Simplement faire:
 ```
 
 
+
+# Divers sources à tester
+## Pour les SonOff dans e-welink
+https://github.com/AlexxIT/SonoffLAN
+
+https://github.com/peterbuga/HASS-sonoff-ewelink
+
+# Utilitaire d'installation HAC
+https://hacs.xyz/
+
+https://hacs.xyz/docs/installation/installation
 
 
 
