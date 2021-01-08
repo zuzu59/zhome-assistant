@@ -1,6 +1,6 @@
 #!/bin/bash
 #Petit script pour sauvegarder la config de Home Assitant
-#zf210105.1902
+#zf210108.1544
 #pour installer Docker et Docker compose sur une machine Ubuntu c'est ici:
 #https://github.com/zuzu59/docker_demo
 
@@ -17,8 +17,8 @@ CTRL-C pour arrêter ou CR pour continuer !
 "
 read
 
-sudo chown -R $USER.$USER ./config
-sudo chmod -R 777 ./config
+sudo chown -R $USER.$USER ./config ./vscode
+sudo chmod -R 777 ./config ./vscode
 
 YEAR=`date +%Y`
 MONTH=`date +%m`
@@ -28,6 +28,7 @@ TIME=`date +%H%M`
 ZTIME=${YEAR}${MONTH}${DAY}.${TIME}
 
 cp -R ./config ./config.$ZTIME.sav
+cp -R ./vscode ./vscode.$ZTIME.sav
 
 echo "
 Sauvegarde effectuée !

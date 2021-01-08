@@ -1,4 +1,4 @@
-#zf210108.1212
+#zf210108.1532
 # source: 
 # https://www.home-assistant.io/getting-started/
 # https://hub.docker.com/r/linuxserver/code-server
@@ -22,11 +22,13 @@ services:
     image: linuxserver/code-server
     volumes:
       - $PWD/vscode:/config 
-      - $PWD/config:/config/workspace 
+      - $PWD:/config/workspace 
     environment:
       - TZ=Europe/Zurich
-      - PASSWORD=$ha_vscode_password 
-#      - SUDO_PASSWORD=xxx     
+      - PASSWORD=$ha_vscode_password
+#      - SUDO_PASSWORD=xxx
+      - PUID=1000
+      - PGID=1001
     restart: always
     ports: 
       - "8443:8443"
