@@ -1,12 +1,14 @@
 #!/bin/bash
 #Petit script pour démarrer tout le binz
-#zf210105.1858
+#zf210108.1213
 #pour installer Docker et Docker compose sur une machine Ubuntu c'est ici:
 #https://github.com/zuzu59/docker_demo
 
-mkdir ./config
-sudo chown -R $USER.$USER ./config
-sudo chmod -R 777 ./config
+source ./ha_secrets.sh
+
+mkdir ./config ./vscode
+sudo chown -R $USER.$USER ./config ./vscode
+sudo chmod -R 777 ./config ./vscode
 
 #docker-compose up
 docker-compose up -d
@@ -39,11 +41,6 @@ pour enlever les container ET aussi les datas:
 docker-compose down -v --remove-orphans
 
 
-
-ATTENTION:
-N'oubliez pas RAPIDEMENT d'aller changer le password par défault (admin) du compte admin de Grafana !
-
-Et... de faire tourner une seule fois le script: './configure_influxdb.sh' afin de configurer le compte admin de InfluxDB !
 
 
 "

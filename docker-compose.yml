@@ -1,5 +1,7 @@
-#zf210105.1751
-# source: https://www.home-assistant.io/getting-started/
+#zf210108.1212
+# source: 
+# https://www.home-assistant.io/getting-started/
+# https://hub.docker.com/r/linuxserver/code-server
 
 version: '3'
 services:
@@ -11,8 +13,26 @@ services:
     environment:
       - TZ=Europe/Zurich
     restart: always
-#    network_mode: host
     ports: 
       - "8123:8123"
+    
+
+  vscode:
+    container_name: vscode
+    image: linuxserver/code-server
+    volumes:
+      - $PWD/vscode:/config 
+      - $PWD/config:/config/workspace 
+    environment:
+      - TZ=Europe/Zurich
+      - PASSWORD=$ha_vscode_password 
+#      - SUDO_PASSWORD=xxx     
+    restart: always
+    ports: 
+      - "8443:8443"
+    
+    
+    
+    
     
     

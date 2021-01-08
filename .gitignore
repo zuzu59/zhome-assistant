@@ -1,5 +1,6 @@
-config/
-config*.sav
+ha_secrets.sh
+config*
+vscode*
 
 
 # Byte-compiled / optimized / DLL files
