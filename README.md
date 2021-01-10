@@ -1,7 +1,7 @@
 # zhome-assistant
 Petits tests de Homme Assistant dans un container Docker avec tout ce qu'il va bien pour pouvoir tester facilement
 
-zf210110.1755
+zf210110.1808
 
 
 
@@ -19,6 +19,7 @@ zf210110.1755
   * [Home Assistant dans le cloud avec les démos](#home-assistant-dans-le-cloud-avec-les-démos)
     * [Cloud à 5.- par mois](#cloud-à-5--par-mois)
     * [démos des possibilités](#démos-des-possibilités)
+  * [Les diverses façon d'installer Home Assistant](#les-diverses-façon-dinstaller-home-assistant)
   * [Pour les SonOff dans e-welink](#pour-les-sonoff-dans-e-welink)
   * [Utilitaire d'installation HACS](#utilitaire-dinstallation-hacs)
   * [Installation de Visual Code (vscode, code-server) embarqué dans HA](#installation-de-visual-code-vscode-code-server-embarqué-dans-ha)
@@ -26,6 +27,11 @@ zf210110.1755
   * [Icones pour Lovelace](#icones-pour-lovelace)
   * [Ne pas oublier de se mettre en mode advanced !](#ne-pas-oublier-de-se-mettre-en-mode-advanced-)
   * [Envoyer des notification à Telegram](#envoyer-des-notification-à-telegram)
+  * [Intégration avec Google Calendar](#intégration-avec-google-calendar)
+  * [Home Assistant qui parle (Text to Speech)](#home-assistant-qui-parle-text-to-speech)
+  * [Home Assistant avec NodeRed](#home-assistant-avec-nodered)
+  * [Gestion des secrets avec Home Assistant](#gestion-des-secrets-avec-home-assistant)
+  * [Home Assistant intégration avec les Cameras V380](#home-assistant-intégration-avec-les-cameras-v380)
 <!-- /TOC -->
 
 
@@ -81,6 +87,10 @@ https://www.nabucasa.com/
 https://www.home-assistant.io/
 
 
+## Les diverses façon d'installer Home Assistant
+https://www.home-assistant.io/docs/installation/
+
+
 ## Pour les SonOff dans e-welink
 https://github.com/AlexxIT/SonoffLAN
 
@@ -89,6 +99,10 @@ https://github.com/AlexxIT/SonoffLAN#cloud-only-mode
 https://hometechtime.com/how-to-install-sonoff-lan-on-home-assistant/
 
 https://github.com/peterbuga/HASS-sonoff-ewelink
+
+https://sonoff.tech/product/wifi-diy-smart-switches/th10-th16
+
+https://www.itead.cc/sonoff-th.html
 
 
 ## Utilitaire d'installation HACS
@@ -121,3 +135,28 @@ https://community.home-assistant.io/t/missing-menu-item/237420/3
 ## Envoyer des notification à Telegram
 https://www.home-assistant.io/integrations/telegram/
 
+
+## Intégration avec Google Calendar
+https://www.home-assistant.io/integrations/calendar.google/
+
+
+## Home Assistant qui parle (Text to Speech)
+https://www.home-assistant.io/integrations/tts/
+
+
+## Home Assistant avec NodeRed
+https://user-images.githubusercontent.com/4663918/63022233-76304400-be70-11e9-8516-cab988df6b1e.png
+
+https://www.juanmtech.com/get-started-with-node-red-and-home-assistant
+
+https://nodered.org/
+
+https://community.home-assistant.io/c/third-party/node-red/
+
+
+## Gestion des secrets avec Home Assistant
+https://www.home-assistant.io/docs/configuration/secrets/
+
+
+## Home Assistant intégration avec les Cameras V380
+https://community.home-assistant.io/t/v380s-camera/50446
