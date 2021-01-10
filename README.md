@@ -1,7 +1,7 @@
 # zhome-assistant
 Petits tests de Homme Assistant dans un container Docker avec tout ce qu'il va bien pour pouvoir tester facilement
 
-zf210110.1529
+zf210110.1548
 
 
 
@@ -16,12 +16,14 @@ zf210110.1529
     * [Arrêt](#arrêt)
   * [Sauvegarde de la config d'Home Assistant](#sauvegarde-de-la-config-dhome-assistant)
 * [Divers sources à tester](#divers-sources-à-tester)
+  * [Home Assistant dans le cloud avec les démos](#home-assistant-dans-le-cloud-avec-les-démos)
   * [Pour les SonOff dans e-welink](#pour-les-sonoff-dans-e-welink)
-* [Utilitaire d'installation HAC](#utilitaire-dinstallation-hac)
-* [Data Base utilisé dans HA](#data-base-utilisé-dans-ha)
-* [Icones pour Lovelace](#icones-pour-lovelace)
-* [Ne pas oublier de se mettre en mode advanced !](#ne-pas-oublier-de-se-mettre-en-mode-advanced-)
-* [Envoyer des notification à Telegram](#envoyer-des-notification-à-telegram)
+  * [Utilitaire d'installation HACS](#utilitaire-dinstallation-hacs)
+  * [Installation de Visual Code (vscode, code-server) embarqué dans HA](#installation-de-visual-code-vscode-code-server-embarqué-dans-ha)
+  * [Base de donnée utilisée dans HA](#base-de-donnée-utilisée-dans-ha)
+  * [Icones pour Lovelace](#icones-pour-lovelace)
+  * [Ne pas oublier de se mettre en mode advanced !](#ne-pas-oublier-de-se-mettre-en-mode-advanced-)
+  * [Envoyer des notification à Telegram](#envoyer-des-notification-à-telegram)
 <!-- /TOC -->
 
 
@@ -69,34 +71,47 @@ Pour sauvegarder la config d'Home Assisttant, il faut simplement faire:
 
 
 # Divers sources à tester
+## Home Assistant dans le cloud avec les démos
+https://www.home-assistant.io/
+
+
 ## Pour les SonOff dans e-welink
 https://github.com/AlexxIT/SonoffLAN
+
+https://github.com/AlexxIT/SonoffLAN#cloud-only-mode
 
 https://hometechtime.com/how-to-install-sonoff-lan-on-home-assistant/
 
 https://github.com/peterbuga/HASS-sonoff-ewelink
 
 
-# Utilitaire d'installation HAC
+## Utilitaire d'installation HACS
 https://hacs.xyz/
 
 https://hacs.xyz/docs/installation/installation
 
 
-# Data Base utilisé dans HA
+## Installation de Visual Code (vscode, code-server) embarqué dans HA
+https://www.youtube.com/watch?v=sarfQVmWlr0&feature=youtu.be
+
+
+## Base de donnée utilisée dans HA
 https://www.home-assistant.io/docs/backend/database/
 
 Il faudrait donc installer encore un container *adminer* pour pouvoir la gérer en profondeur ;-)
 
 
-# Icones pour Lovelace
+## Icones pour Lovelace
 https://iconify.design/icon-sets/mdi/
 
-
-# Ne pas oublier de se mettre en mode advanced !
-C'est quand on se trouve sur son user, qu'il y a la coche à mettre 
+https://www.juanmtech.com/how-to-set-up-lovelace-on-home-assistant/
 
 
-# Envoyer des notification à Telegram
+## Ne pas oublier de se mettre en mode advanced !
+C'est quand on se trouve sur son user, qu'il y a la coche à mettre
+https://community.home-assistant.io/t/missing-menu-item/237420/3
+
+
+## Envoyer des notification à Telegram
 https://www.home-assistant.io/integrations/telegram/
 
