@@ -1,7 +1,7 @@
 # zhome-assistant
 Petits tests de Homme Assistant dans un container Docker avec tout ce qu'il va bien pour pouvoir tester facilement
 
-zf210110.1548
+zf210110.1755
 
 
 
@@ -15,8 +15,10 @@ zf210110.1548
     * [Démarrage](#démarrage)
     * [Arrêt](#arrêt)
   * [Sauvegarde de la config d'Home Assistant](#sauvegarde-de-la-config-dhome-assistant)
-* [Divers sources à tester](#divers-sources-à-tester)
+* [Divers choses à tester](#divers-choses-à-tester)
   * [Home Assistant dans le cloud avec les démos](#home-assistant-dans-le-cloud-avec-les-démos)
+    * [Cloud à 5.- par mois](#cloud-à-5--par-mois)
+    * [démos des possibilités](#démos-des-possibilités)
   * [Pour les SonOff dans e-welink](#pour-les-sonoff-dans-e-welink)
   * [Utilitaire d'installation HACS](#utilitaire-dinstallation-hacs)
   * [Installation de Visual Code (vscode, code-server) embarqué dans HA](#installation-de-visual-code-vscode-code-server-embarqué-dans-ha)
@@ -70,8 +72,12 @@ Pour sauvegarder la config d'Home Assisttant, il faut simplement faire:
 ```
 
 
-# Divers sources à tester
+# Divers choses à tester
 ## Home Assistant dans le cloud avec les démos
+### Cloud à 5.- par mois
+https://www.nabucasa.com/
+
+### démos des possibilités
 https://www.home-assistant.io/
 
 
