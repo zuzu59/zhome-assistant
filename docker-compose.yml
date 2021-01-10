@@ -1,7 +1,9 @@
-#zf210108.1532
+#zf210108.1652
 # source: 
 # https://www.home-assistant.io/getting-started/
+# https://www.home-assistant.io/docs/installation/docker/
 # https://hub.docker.com/r/linuxserver/code-server
+# https://community.home-assistant.io/t/install-vscode-visual-studio-code-as-a-separate-docker-container/166007/33
 
 version: '3'
 services:

@@ -1,8 +1,10 @@
 #!/bin/bash
 #Petit script pour sauvegarder la config de Home Assitant
-#zf210108.1544
+#zf210108.1608
 #pour installer Docker et Docker compose sur une machine Ubuntu c'est ici:
 #https://github.com/zuzu59/docker_demo
+
+docker-compose ps
 
 echo "
 ATTENTION, il faut arrêter Home Assitant avant avec un 

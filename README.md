@@ -1,7 +1,8 @@
 # zhome-assistant
 Petits tests de Homme Assistant dans un container Docker avec tout ce qu'il va bien pour pouvoir tester facilement
 
-zf210105.2133
+zf210110.1529
+
 
 
 <!-- TOC titleSize:2 tabSpaces:2 depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 skip:1 title:1 charForUnorderedList:* -->
@@ -17,6 +18,10 @@ zf210105.2133
 * [Divers sources à tester](#divers-sources-à-tester)
   * [Pour les SonOff dans e-welink](#pour-les-sonoff-dans-e-welink)
 * [Utilitaire d'installation HAC](#utilitaire-dinstallation-hac)
+* [Data Base utilisé dans HA](#data-base-utilisé-dans-ha)
+* [Icones pour Lovelace](#icones-pour-lovelace)
+* [Ne pas oublier de se mettre en mode advanced !](#ne-pas-oublier-de-se-mettre-en-mode-advanced-)
+* [Envoyer des notification à Telegram](#envoyer-des-notification-à-telegram)
 <!-- /TOC -->
 
 
@@ -71,10 +76,27 @@ https://hometechtime.com/how-to-install-sonoff-lan-on-home-assistant/
 
 https://github.com/peterbuga/HASS-sonoff-ewelink
 
+
 # Utilitaire d'installation HAC
 https://hacs.xyz/
 
 https://hacs.xyz/docs/installation/installation
 
 
+# Data Base utilisé dans HA
+https://www.home-assistant.io/docs/backend/database/
+
+Il faudrait donc installer encore un container *adminer* pour pouvoir la gérer en profondeur ;-)
+
+
+# Icones pour Lovelace
+https://iconify.design/icon-sets/mdi/
+
+
+# Ne pas oublier de se mettre en mode advanced !
+C'est quand on se trouve sur son user, qu'il y a la coche à mettre 
+
+
+# Envoyer des notification à Telegram
+https://www.home-assistant.io/integrations/telegram/
 
