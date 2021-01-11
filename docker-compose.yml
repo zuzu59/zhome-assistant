@@ -1,4 +1,4 @@
-#zf210111.1418
+#zf210111.1443
 # source: 
 # https://www.home-assistant.io/getting-started/
 # https://www.home-assistant.io/docs/installation/docker/
@@ -18,9 +18,12 @@ services:
     restart: always
     ports: 
       - "8123:8123"
-    networks:
-      - frontend
-      - backend
+    # networks: 
+    #   - container:vpn   
+
+    # networks:
+    #   - frontend
+    # #   - backend
 
     
 
@@ -39,9 +42,9 @@ services:
     restart: always
     ports: 
       - "8443:8443"
-    networks:
-      - frontend
-      - backend
+    # networks:
+    #   - frontend
+    #   - backend
     
     
     
@@ -52,19 +55,19 @@ services:
       - TUNNEL=vps
       - USERNAME=$VPN_USERNAME
       - PASSWORD=$VPN_PASSWORD
-    # network_mode: host
+    network_mode: host
     privileged: yes
-    restart: always    
-    networks:
-      - backend
-      - frontend
+    restart: always 
+    # networks:
+    #   - frontend
+    #   - backend
 
 
-networks:
-    backend:
-    frontend:
-      external: true
-    
-    
-    
-    
+# networks:
+#     frontend:
+#       external: true
+#     backend:
+#       external: true
+# 
+
+
