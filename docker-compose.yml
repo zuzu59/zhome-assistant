@@ -1,14 +1,15 @@
-#zf210108.1652
+#zf210111.1418
 # source: 
 # https://www.home-assistant.io/getting-started/
 # https://www.home-assistant.io/docs/installation/docker/
 # https://hub.docker.com/r/linuxserver/code-server
 # https://community.home-assistant.io/t/install-vscode-visual-studio-code-as-a-separate-docker-container/166007/33
+# https://hub.docker.com/r/vimagick/pptp
 
 version: '3'
 services:
   homeassistant:
-    container_name: home-assistant
+#    container_name: home-assistant
     image: homeassistant/home-assistant:stable
     volumes:
       - $PWD/config:/config
@@ -17,10 +18,14 @@ services:
     restart: always
     ports: 
       - "8123:8123"
+    networks:
+      - frontend
+      - backend
+
     
 
   vscode:
-    container_name: vscode
+#    container_name: vscode
     image: linuxserver/code-server
     volumes:
       - $PWD/vscode:/config 
@@ -28,14 +33,37 @@ services:
     environment:
       - TZ=Europe/Zurich
       - PASSWORD=$ha_vscode_password
-#      - SUDO_PASSWORD=xxx
+      - SUDO_PASSWORD=$ha_vscode_password
       - PUID=1000
       - PGID=1001
     restart: always
     ports: 
       - "8443:8443"
+    networks:
+      - frontend
+      - backend
     
     
+    
+  vpn:
+    image: vimagick/pptp
+    environment:
+      - SERVER=$VPN_SERVER_IPV4
+      - TUNNEL=vps
+      - USERNAME=$VPN_USERNAME
+      - PASSWORD=$VPN_PASSWORD
+    # network_mode: host
+    privileged: yes
+    restart: always    
+    networks:
+      - backend
+      - frontend
+
+
+networks:
+    backend:
+    frontend:
+      external: true
     
     
     

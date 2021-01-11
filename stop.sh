@@ -1,8 +1,11 @@
 #!/bin/bash
 #Petit script pour arrêter tout le binz
-#zf210105.2019
+#zf210111.1413
 #pour installer Docker et Docker compose sur une machine Ubuntu c'est ici:
 #https://github.com/zuzu59/docker_demo
+
+source ./ha_secrets.sh
+source ./vpn_secrets.sh
 
 docker-compose stop
 
