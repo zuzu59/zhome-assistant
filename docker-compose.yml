@@ -1,4 +1,4 @@
-#zf210111.1443
+#zf210111.1841
 # source: 
 # https://www.home-assistant.io/getting-started/
 # https://www.home-assistant.io/docs/installation/docker/
@@ -48,19 +48,19 @@ services:
     
     
     
-  vpn:
-    image: vimagick/pptp
-    environment:
-      - SERVER=$VPN_SERVER_IPV4
-      - TUNNEL=vps
-      - USERNAME=$VPN_USERNAME
-      - PASSWORD=$VPN_PASSWORD
-    network_mode: host
-    privileged: yes
-    restart: always 
-    # networks:
-    #   - frontend
-    #   - backend
+  # vpn:
+  #   image: vimagick/pptp
+  #   environment:
+  #     - SERVER=$VPN_SERVER_IPV4
+  #     - TUNNEL=vps
+  #     - USERNAME=$VPN_USERNAME
+  #     - PASSWORD=$VPN_PASSWORD
+  #   network_mode: host
+  #   privileged: yes
+  #   restart: always 
+  #   # networks:
+  #   #   - frontend
+  #   #   - backend
 
 
 # networks:
