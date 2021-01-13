@@ -1,7 +1,7 @@
 # zhome-assistant
 Petits tests de Homme Assistant dans un container Docker avec tout ce qu'il va bien pour pouvoir tester facilement
 
-zf210110.1808
+zf210113.1132
 
 
 
@@ -15,7 +15,8 @@ zf210110.1808
     * [Démarrage](#démarrage)
     * [Arrêt](#arrêt)
   * [Sauvegarde de la config d'Home Assistant](#sauvegarde-de-la-config-dhome-assistant)
-* [Divers choses à tester](#divers-choses-à-tester)
+* [Divers et encore pleins de chose à tester !](#divers-et-encore-pleins-de-chose-à-tester-)
+  * [Installation de Home Assistant dans un container Docker](#installation-de-home-assistant-dans-un-container-docker)
   * [Home Assistant dans le cloud avec les démos](#home-assistant-dans-le-cloud-avec-les-démos)
     * [Cloud à 5.- par mois](#cloud-à-5--par-mois)
     * [démos des possibilités](#démos-des-possibilités)
@@ -32,6 +33,9 @@ zf210110.1808
   * [Home Assistant avec NodeRed](#home-assistant-avec-nodered)
   * [Gestion des secrets avec Home Assistant](#gestion-des-secrets-avec-home-assistant)
   * [Home Assistant intégration avec les Cameras V380](#home-assistant-intégration-avec-les-cameras-v380)
+* [Synology](#synology)
+  * [Docker sur vieux Synology](#docker-sur-vieux-synology)
+  * [Installateur de packages externes à Synology opkg)](#installateur-de-packages-externes-à-synology-opkg)
 <!-- /TOC -->
 
 
@@ -78,7 +82,11 @@ Pour sauvegarder la config d'Home Assisttant, il faut simplement faire:
 ```
 
 
-# Divers choses à tester
+# Divers et encore pleins de chose à tester !
+## Installation de Home Assistant dans un container Docker
+https://www.home-assistant.io/docs/installation/docker/
+
+
 ## Home Assistant dans le cloud avec les démos
 ### Cloud à 5.- par mois
 https://www.nabucasa.com/
@@ -160,3 +168,12 @@ https://www.home-assistant.io/docs/configuration/secrets/
 
 ## Home Assistant intégration avec les Cameras V380
 https://community.home-assistant.io/t/v380s-camera/50446
+
+
+# Synology
+## Docker sur vieux Synology
+https://tylermade.net/2017/09/28/how-to-install-docker-on-an-unsupported-synology-nas/
+
+## Installateur de packages externes à Synology opkg)
+https://medium.com/@yehia2amer/how-to-install-a-package-manager-on-a-synology-nas-router-ipkg-opkg-c620890e4c77
+
