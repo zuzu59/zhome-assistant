@@ -10,7 +10,8 @@ source ./vpn_secrets.sh
 echo 'nameserver 8.8.8.8' | sudo tee /etc/resolv.conf
 
 mkdir ./config ./vscode
-sudo chown -R $USER.$USER ./config ./vscode
+# sudo chown -R $USER.$USER ./config ./vscode
+sudo chown -R $USER:staff ./config ./vscode
 sudo chmod -R 777 ./config ./vscode
 
 #docker-compose up

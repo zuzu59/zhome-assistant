@@ -1,6 +1,6 @@
 #!/bin/bash
 #Petit script pour sauvegarder la config de Home Assitant
-#zf210108.1608
+#zf210115.0753
 #pour installer Docker et Docker compose sur une machine Ubuntu c'est ici:
 #https://github.com/zuzu59/docker_demo
 
@@ -19,7 +19,7 @@ CTRL-C pour arrêter ou CR pour continuer !
 "
 read
 
-sudo chown -R $USER.$USER ./config ./vscode
+sudo chown -R $USER:staff ./config ./vscode
 sudo chmod -R 777 ./config ./vscode
 
 YEAR=`date +%Y`

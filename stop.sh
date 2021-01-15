@@ -9,7 +9,8 @@ source ./vpn_secrets.sh
 
 docker-compose stop
 
-sudo chown -R $USER.$USER ./config
+# sudo chown -R $USER.$USER ./config
+sudo chown -R $USER:staff ./config
 sudo chmod -R 777 ./config
 
 
