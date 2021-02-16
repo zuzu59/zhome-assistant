@@ -1,4 +1,4 @@
-#zf210123.1104
+#zf210216.1804
 #version pour le Makerspace Lausanne
 # source: 
 # https://www.home-assistant.io/getting-started/
@@ -29,24 +29,24 @@ services:
 
     
 
-  vscode:
-#    container_name: vscode
-    image: linuxserver/code-server
-    volumes:
-      - $PWD/vscode:/config 
-      - $PWD:/config/workspace 
-    environment:
-      - TZ=Europe/Zurich
-      - PASSWORD=$ha_vscode_password
-      - SUDO_PASSWORD=$ha_vscode_password
-      - PUID=1000
-      - PGID=1001
-    restart: always
-    ports: 
-      - "8443:8443"
-    # networks:
-    #   - frontend
-    #   - backend
+#  vscode:
+##    container_name: vscode
+#    image: linuxserver/code-server
+#    volumes:
+#      - $PWD/vscode:/config 
+#      - $PWD:/config/workspace 
+#    environment:
+#      - TZ=Europe/Zurich
+#      - PASSWORD=$ha_vscode_password
+#      - SUDO_PASSWORD=$ha_vscode_password
+#      - PUID=1000
+#      - PGID=1001
+#    restart: always
+#    ports: 
+#      - "8443:8443"
+#    # networks:
+#    #   - frontend
+#    #   - backend
     
     
     
