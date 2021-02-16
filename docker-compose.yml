@@ -1,4 +1,5 @@
-#zf210111.1841
+#zf210123.1104
+#version pour le Makerspace Lausanne
 # source: 
 # https://www.home-assistant.io/getting-started/
 # https://www.home-assistant.io/docs/installation/docker/
@@ -16,8 +17,9 @@ services:
     environment:
       - TZ=Europe/Zurich
     restart: always
-    ports: 
-      - "8123:8123"
+    network_mode: host
+#    ports: 
+#      - "8123:8123"
     # networks: 
     #   - container:vpn   
 
